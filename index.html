@@ -2,23 +2,30 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>ShopX</title>
+<title>ShopKart</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="nav">
-  <h1>ShopX 🛍️</h1>
-  <nav>
-    <a href="index.html">Home</a>
+<header class="navbar">
+  <h2 class="logo">ShopKart</h2>
+  <input type="text" placeholder="Search for products...">
+  <div class="nav-links">
     <a href="products.html">Products</a>
-    <a href="cart.html">Cart 🛒</a>
-  </nav>
+    <a href="cart.html">Cart 🛒 (<span id="count">0</span>)</a>
+  </div>
 </header>
 
-<section class="hero">
-  <h2 class="fade-in">Big Sale is Live 🔥</h2>
-  <p class="fade-in delay">Up to 50% OFF</p>
+<section class="categories">
+  <span>Mobiles</span>
+  <span>Fashion</span>
+  <span>Electronics</span>
+  <span>Home</span>
+  <span>Appliances</span>
+</section>
+
+<section class="banner">
+  <h1>Big Billion Sale 🔥</h1>
   <button onclick="goProducts()">Shop Now</button>
 </section>
 
