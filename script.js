@@ -5,12 +5,11 @@ function addToCart(name, price){
   cart.push({name, price});
   localStorage.setItem("cart", JSON.stringify(cart));
   updateCount();
-  alert(name + " added!");
 }
 
 function updateCount(){
-  let count = document.getElementById("count");
-  if(count) count.innerText = cart.length;
+  let c = document.getElementById("count");
+  if(c) c.innerText = cart.length;
 }
 
 function goProducts(){
@@ -23,7 +22,7 @@ function displayCart(){
 
   if(container){
     container.innerHTML = "";
-    cart.forEach(item => {
+    cart.forEach(item=>{
       container.innerHTML += `<p>${item.name} - ₹${item.price}</p>`;
       total += item.price;
     });
