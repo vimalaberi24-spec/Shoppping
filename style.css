@@ -1,27 +1,45 @@
 body {
   margin: 0;
-  font-family: 'Poppins', sans-serif;
-  background: #f4f6f9;
+  font-family: Arial;
+  background: #f1f3f6;
 }
 
-/* NAV */
-.nav {
+/* NAVBAR */
+.navbar {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  background: #0d47a1;
+  background: #2874f0;
   color: white;
-  padding: 15px;
+  padding: 10px;
 }
 
-nav a {
+.logo {
+  font-size: 20px;
+}
+
+.navbar input {
+  width: 40%;
+  padding: 8px;
+}
+
+.nav-links a {
   color: white;
   margin: 10px;
   text-decoration: none;
 }
 
-/* HERO */
-.hero {
-  height: 80vh;
+/* CATEGORY BAR */
+.categories {
+  display: flex;
+  justify-content: space-around;
+  background: white;
+  padding: 10px;
+}
+
+/* BANNER */
+.banner {
+  height: 250px;
   background: linear-gradient(to right, #42a5f5, #1e88e5);
   color: white;
   display: flex;
@@ -31,53 +49,31 @@ nav a {
 }
 
 /* PRODUCTS */
-.products {
+.product-grid {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.card {
+.product {
   background: white;
   padding: 15px;
-  margin: 15px;
-  border-radius: 10px;
+  margin: 10px;
   width: 200px;
+  border-radius: 5px;
   text-align: center;
   transition: 0.3s;
 }
 
-.card:hover {
-  transform: scale(1.1);
+.product:hover {
+  box-shadow: 0 0 10px gray;
+  transform: scale(1.05);
 }
 
 button {
-  padding: 8px;
-  background: #ff5722;
+  background: #fb641b;
   color: white;
   border: none;
+  padding: 8px;
   cursor: pointer;
-}
-
-/* ANIMATIONS */
-.fade-in {
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-}
-
-.fade-up {
-  opacity: 0;
-  transform: translateY(40px);
-  animation: fadeUp 1s forwards;
-}
-
-.delay { animation-delay: 0.5s; }
-.delay2 { animation-delay: 1s; }
-
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-
-@keyframes fadeUp {
-  to { opacity: 1; transform: translateY(0); }
 }
