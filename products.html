@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Products</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="nav">
+  <h1>Products</h1>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart 🛒 (<span id="count">0</span>)</a>
+  </nav>
+</header>
+
+<section class="products">
+
+  <div class="card fade-up">
+    <img src="https://via.placeholder.com/150">
+    <h3>Headphones</h3>
+    <p>₹999</p>
+    <button onclick="addToCart('Headphones',999)">Add</button>
+  </div>
+
+  <div class="card fade-up delay">
+    <img src="https://via.placeholder.com/150">
+    <h3>Shoes</h3>
+    <p>₹1499</p>
+    <button onclick="addToCart('Shoes',1499)">Add</button>
+  </div>
+
+  <div class="card fade-up delay2">
+    <img src="https://via.placeholder.com/150">
+    <h3>Watch</h3>
+    <p>₹1999</p>
+    <button onclick="addToCart('Watch',1999)">Add</button>
+  </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
